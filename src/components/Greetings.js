@@ -8,16 +8,8 @@ const Greetings = () => {
   const { greeting, error, loading } = useSelector((state) => state.greetings);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        dispatch(fetchRandomGreeting());
-      } catch (error) {
-        // Handle error
-      }
-    };
-
-    fetchData();
-  }, [dispatch]);
+    dispatch(fetchRandomGreeting());
+  }, []);
 
   return (
     <div className="container">
