@@ -27,9 +27,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 hello_rails_front_end <a name="about-project"></a>
+# 📖 hello_react_front_end <a name="about-project"></a>
 
-**hello_rails_front_end** This is a simple React-Redux application named 'hello-react-front-end'. It features a main App component using react-router to manage navigation. One of the routes leads to a Greeting component, which displays a random greeting message fetched from an API. The app uses Redux for state management, specifically for handling API calls and updating the greeting message.
+**hello_react_front_end** This is a simple React-Redux application named 'hello-react-front-end'. It features a main App component using react-router to manage navigation. One of the routes leads to a Greeting component, which displays a random greeting message fetched from an API. The app uses Redux for state management, specifically for handling API calls and updating the greeting message.
 
 ## 💻 link to back end <a name="built-with"></a>
 
