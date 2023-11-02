@@ -14,7 +14,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(135deg, #9b6e6e, #4287f5, #9b6e6e, #4287f5);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s infinite alternate;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +27,16 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ffffff;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #ffffff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes App-logo-spin {
@@ -36,4 +47,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
